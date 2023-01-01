@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(10, 10, 10);
+}
+
+/*--- Titre ---*/
+header{
+    position: sticky;
+    margin-bottom: 2em;
+}
+h1{
+    font-size: 1.5em;
+    text-align: center;
+    color: whitesmoke;
+    background-color: darkblue;
+    padding-bottom: 1em;
+}
+
+
+img{
+    width: 25%;
+
+}
+button{
+    width: 25%;
+
+    font-size: 2em;
+    background-color: blue;
+    color: white;
+
+    transition: all 1s;
+}
+button:active{
+    animation: buttonAnimation 0.5s;
+}
+/*--- Les bouttons utiles ---*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav button{
+    width: 90%;
+    padding: 0.5em;
+
+    margin: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/*--- Class du compteur*/
+.Counter{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+
+    padding: 1.5em;
+    background-color: rgb(78, 78, 78);
+    margin-bottom: 1em;
+}
+.CounterDescription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    margin: 1em;
+}
+.CounterDescription p{
+    color: white;
+    font-size: 1.5em;
+}
+
+.CounterNumber{
+    color: white;
+    font-size: 2em;
+    padding-left: 0.5em;
+}
+
+
+/* --- Responsive ---*/
+
+@media all and (min-width: 641px){
+    h1{
+        font-size: 3em;
+    }
+    
+    .Counter{
+        font-size: 1.5em;
+    }
+    
+    nav button{
+        width:auto;
+    }
+}
+
+@media all and (min-width: 1025px){
+    .Counter{
+        font-size: 1em;
+        gap: 2%;
+    }
+    .CounterDescription{
+        width: 24.3%;
+        font-size: 1em;
+    }
+    .CounterNumber{
+        font-size: 2em;
+    }
+    button{
+        width: 10%;
+    }
+}
+
+/* --- Animation qd click ---*/
+@keyframes buttonAnimation{
+    from{
+        transform: scale(1.2);
+        background-color: lightblue;
+    }
+    to{
+        transform: scale(1);
+        background-color: blue;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bad Transport - Compteurs des niveaux de votre vaisseau</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/icone.png">
+</head>
+
+<body>
+    <header>
+        <h1>Les niveaux de votre vaisseau</h1>
+    </header>
+
+    <hr>
+    
+    <!-- Energie -->
+    <div class="Counter">
+        <button id="M10E">-10</button>
+        <button id="M5E">-5</button>
+        <button id="M1E">-1</button>
+
+        <div class="CounterDescription">
+            <img src="images/Jeton_Energie.png" alt="Energie">
+            <p>Energie :</p>
+            <div class="CounterNumber" id="PowerCounter">100</div>
+        </div>
+
+        <button id="P1E">+1</button>
+        <button id="P5E">+5</button>
+        <button id="P10E">+10</button>
+    </div>
+
+    <!-- Nourriture -->
+    <div class="Counter">
+        <button id="M10N">-10</button>
+        <button id="M5N">-5</button>
+        <button id="M1N">-1</button>
+
+        <div class="CounterDescription">
+            <img src="images/Jeton_Food.png" alt="Nourriture">
+            <p>Nourriture :</p>
+            <div class="CounterNumber" id="FoodCounter">100</div>
+        </div>
+
+        <button id="P1N">+1</button>
+        <button id="P5N">+5</button>
+        <button id="P10N">+10</button>
+    </div>
+
+    <!-- Defense -->
+    <div class="Counter">
+        <button id="M10D">-10</button>
+        <button id="M5D">-5</button>
+        <button id="M1D">-1</button>
+
+        <div class="CounterDescription">
+            <img src="images/Jeton_bouclier.png" alt="Defense">
+            <p>Defense :</p>
+            <div class="CounterNumber" id="DefenseCounter">100</div>
+        </div>
+
+        <button id="P1D">+1</button>
+        <button id="P5D">+5</button>
+        <button id="P10D">+10</button>
+    </div>
+
+    <!-- Metal -->
+    <div class="Counter">
+        <button id="M10M">-10</button>
+        <button id="M5M">-5</button>
+        <button id="M1M">-1</button>
+
+        <div class="CounterDescription">
+            <img src="images/Jeton_Metal.png" alt="Metal">
+            <p>Metal :</p>
+            <div class="CounterNumber" id="MetalCounter">100</div>
+        </div>
+
+        <button id="P1M">+1</button>
+        <button id="P5M">+5</button>
+        <button id="P10M">+10</button>
+    </div>
+
+    <hr>
+
+    <nav>
+        <button id="NormalTurn">Nouveau tour</button>
+        <button id="Reset">réinitialiser</button>
+    </nav>
+    
+    <script src="script.js"></script>
+</body>
+</html>
